@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function () {
     // Create TABs - end
 
     // Create timer - start 
-    let deadline = '2020-04-21 19:50';
+    let deadline = '2020-05-21 19:50';
 
     function getTimeRemaining(endTime) {
         let t = Date.parse(endTime) - Date.parse(new Date()),
@@ -78,6 +78,37 @@ window.addEventListener('DOMContentLoaded', function () {
     setClock('timer', deadline);
     // Create timer - end 
 
+
+    // Create modal window - start 
+    let moreBtn = document.querySelector('.more'),
+        overlay = document.querySelector('.overlay'),
+        closeBtn = document.querySelector('.popup-close');
+
+    moreBtn.addEventListener('click', function (e) {
+        openOverlay(e);
+    });
+
+    function openOverlay(event) {
+        overlay.style.display = 'block';
+        moreBtn.classList.add('more-splash');
+        document.body.style.overflow = 'hidden';
+    }
+
+    closeBtn.addEventListener('click', function () {
+        overlay.style.display = 'none';
+        moreBtn.classList.remove('more-splash');
+        document.body.style.overflow = '';
+    });
+
+    let descriptionBtn = document.querySelectorAll('.description-btn'),
+        description = document.querySelectorAll('.description');
+
+    for (let i = 0; i < descriptionBtn.length; i++) {
+        descriptionBtn[i].addEventListener('click', function (e) {
+            openOverlay(e);
+        });
+    }
+    // Create modal window - end 
 
 
 
