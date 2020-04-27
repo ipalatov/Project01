@@ -1,0 +1,23 @@
+{
+  "name": "project01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipalatov/Projet01.git"
+  },
+  "author": "Ivan Palatov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipalatov/Projet01/issues"
+  },
+  "homepage": "https://github.com/ipalatov/Projet01#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

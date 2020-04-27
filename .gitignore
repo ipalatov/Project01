@@ -1,1 +1,7 @@
 backup_install-LAMP/
+dist/
+js/parts/
+node_modules/
+package.json
+webpack.config.js
+__MACOSX/
